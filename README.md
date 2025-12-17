@@ -1,4 +1,4 @@
-# CS696A-SAAS-resume-builder-backend
+# CS696A- SaaS Resume Buildder (Backend)
 Manual API testing was conducted to validate authentication flows, resume management endpoints, AI services, file parsing, and export functionality.
 
 ## Architecture
