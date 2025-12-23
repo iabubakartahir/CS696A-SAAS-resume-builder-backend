@@ -1,0 +1,13 @@
+<div class="resume gold">
+  <h1>{{contact.fullName}}</h1>
+  <p>{{contact.email}} | {{contact.phone}}</p>
+  <p><em>{{contact.headline}}</em></p>
+  <h2>Summary</h2>
+  <p>{{contact.summary}}</p>
+  <h2>Experience</h2>
+  <ul>
+  {{#each experience}}
+    <li><strong>{{title}}</strong> - {{company}}</li>
+  {{/each}}
+  </ul>
+</div>

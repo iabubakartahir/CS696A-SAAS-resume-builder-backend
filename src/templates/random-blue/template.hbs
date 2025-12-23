@@ -1,0 +1,24 @@
+<div class="resume">
+  <h1>{{contact.fullName}}</h1>
+  <p>{{contact.email}} | {{contact.phone}}</p>
+  <h2>Summary</h2>
+  <p>{{contact.summary}}</p>
+
+  {{#if experience.length}}
+  <h2>Experience</h2>
+  <ul>
+  {{#each experience}}
+    <li><strong>{{title}}</strong> - {{company}}
+      <ul>
+        {{#each bullets}}<li>{{this}}</li>{{/each}}
+      </ul>
+    </li>
+  {{/each}}
+  </ul>
+  {{/if}}
+
+  {{#if skills.length}}
+  <h2>Skills</h2>
+  <p>{{#each skills}}{{name}}{{#unless @last}}, {{/unless}}{{/each}}</p>
+  {{/if}}
+</div>
